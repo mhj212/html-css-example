@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+<style>
+	
+body{
+	font-family: 'Baloo Chettan', cursive;
+}
+
+/* SECTION 1 */
+
+.section1 img{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;	
+
+        border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.ab-animate-block.animate-background {
+	-webkit-transition: all 7s ease-out;
+	-moz-transition: all 7s ease-out;
+	transition: all 7s ease-out;
+	transform: scale(1.10);
+	transform-origin: left bottom;
+	-moz-transform: scale(1.10);
+	-webkit-transform: scale(1.10);
+	-o-transform: scale(1.10);
+	-ms-transform: scale(1.10); /* IE 9 */
+}
+.ab-animate-block.animate-background.animated {
+	transform: scale(1);
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1); 
+}
+
+.abpl-micro-hearder-img-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.abpl-outer-wrapper-full{
+    margin: 0 auto;
+    max-width: 1525px;
+    overflow: hidden;
+    width: auto;
+    position: relative;
+    height: 1000px;
+}
+
+.ab-container-full {
+    width: 100%;
+    max-width: 100%;
+    clear: both;
+}
+
+.header-banner{
+	background: rgba(255,255,255,0.5);
+	padding: 50px;
+	position: relative;
+	top:55px;
+}
+.header-banner h1{
+   color:white;
+   font-size: 40px;
+}
+
+
+/* SECTION 2 and flip card CSS */
+
+.flip-container {
+	    width: 50%;
+	float: left;
+	margin: 20px 0px;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 100%;
+	height: 100%;
+}
+
+.flipper {
+-webkit-transition: 0.6s;
+-webkit-transform-style: preserve-3d;
+-ms-transition: 0.6s;
+-moz-transition: 0.6s;
+-moz-transform-style: preserve-3d;
+-ms-transform-style: preserve-3d;
+transition: 0.6s;
+transform-style: preserve-3d;
+        height: 200px;
+        width: 100%;
+	position: relative;
+}
+
+.flipper p{
+	    text-align: center;
+}
+
+.front, .back {
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+backface-visibility: hidden;
+-webkit-transition: 0.6s;
+/*-webkit-transform-style: preserve-3d;*/
+-webkit-transform: rotateY(0deg);
+-moz-transition: 0.6s;
+/*-moz-transform-style: preserve-3d;*/
+-moz-transform: rotateY(0deg);
+-ms-transition: 0.6s;
+/*-ms-transform-style: preserve-3d;*/
+-ms-transform: rotateY(0deg);
+transition: 0.6s;
+/*transform-style: preserve-3d;*/
+transform: rotateY(0deg);
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255,0,0,0.5);
+}
+
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+}
+
+.section2{
+	background: url('nature2.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height: 805px;
+	margin-top: -20px;
+}
+.section2 h1{
+	text-align: center;
+	font-size: 30px;
+	color: white;
+}
+
+.section2 .flipper p{
+	text-align: center;
+	color: white;
+}
+.section2 .flipper p:nth-child(2){
+	font-size: 50px;
+}
+.section2 .flipper a{
+	font-size: 40px;
+	text-align: center;
+}
+.section2 .flipper i{
+	font-size: 50px;
+	color: white;
+	text-align: center;
+}
+
+/* SECTION 3 */
+ 
+.section3{
+	background: url('danielrestaurant.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height: 420px;
+	margin-top: -20px;	
+}
+
+.section3 h1{
+	text-align: center;
+	font-size: 30px;
+	color: white;	
+}
+.section3 h2{
+    text-align: center;
+	font-size: 24px;
+	color: white;
+}
+
+.bmenu{
+    padding: 0px;
+    margin: 0 0 10px 0;
+    position: relative;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+}
+.bmenu li{
+    font-size: 50px;
+    display: block;
+}
+
+.bmenu li a{
+	font-size: 26px;
+	white-space: nowrap;
+	display: block;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 2px rgba(71,80,23,0.3);
+	color: #fff;
+	padding: 5px 20px;
+	margin: 2px;
+	/*background: rgba(255,255,255,0.2);*/
+	letter-spacing: 1px;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	text-decoration: none;
+}
+
+.bmenu li:first-child a{
+	-webkit-border-radius: 15px 15px 0px 0px;
+	-moz-border-radius: 15px 15px 0px 0px;
+	border-radius: 15px 15px 0px 0px;
+}
+.bmenu li:last-child a{
+	-webkit-border-radius: 0px 0px 15px 15px;
+	-moz-border-radius: 0px 0px 15px 15px;
+	border-radius: 0px 0px 15px 15px;
+}
+
+.bmenu:hover li a{
+	text-shadow: 0px 0px 10px #fff;
+	color: transparent;
+}
+.bmenu li a:hover{
+	background: transparent;
+	text-shadow: 1px 1px 10px rgba(71,80,23,0.6);
+	color: white;
+}
+
+/* SECTION 4 */
+
+.section4{
+	background: url('nature5.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height: 450px;
+	margin-top: -25px;	
+}
+
+.box-container{
+	text-align: center;
+}
+.box{
+	background: rgba(255,255,255,0.5);
+    width: 250px;
+    margin: 50px 30px;
+    height: 250px;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    -webkit-transition: background 2s; /* Safari */
+    transition: background 2s;    
+}
+
+.box:hover{
+	background: rgba(255,255,255,0.9);
+}
+
+.box h1{
+	font-size: 15px;
+	color: red;
+}
+.box a{
+  color:purple;
+  text-decoration: none;
+  -webkit-transition: color 2s; /* Safari */
+  transition: color 2s;
+}
+
+.box a:hover{
+	color: blue;
+}
+
+@media (max-width: 1045px){
+	.box{
+		width: 50%;
+		height: 100px;
+	}
+	.section4{
+		height: 700px;
+	}
+}
+
+@media (max-width: 400px){
+	.box{
+		height: 125px;
+		margin: 25px 30px;
+	}
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+
+</head>
+<body>
+
+<div class="ab-container-full">
+	<div class="abpl-outer-wrapper-full section1">
+		<div class="abpl-micro-hearder-img-bg ab-animate-block animate-background animate-on-load">
+			<img src="nature1.jpg">		
+		</div>
+		<div class="header-banner">
+			<h1>Hi, I'm Matthew! Learn more about me</h1>
+		</div>
+	</div>
+	<div class="section2">
+		<h1>Three questions!</h1>
+
+		<div class="card-container">
+
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front">
+						<p>What do I like to do when not coding?</p>
+						<p>?</p>
+					</div>
+					<div class="back">
+						<p>I love making music! I'm a multi-instrumentalist/songwriter</p>
+						<p><i class="fa fa-music fa-3x" aria-hidden="true"></i></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front">
+						<p>Where do I want to travel to next?</p>
+						<p>?</p>
+					</div>
+					<div class="back">
+						<p>Hawaii! I want to learn how to surf and hang at the beach.</p>
+						<p><i class="fa fa-plane fa-3x" aria-hidden="true"></i></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front">
+						<p>What do I enjoy doing in New York City?</p>
+						<p>?</p>
+					</div>
+					<div class="back">
+						<p>I love exploring restaurants throughout the city!</p>
+						<p><i class="fa fa-spoon fa-3x" aria-hidden="true"></i></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section3">
+		<h1>Links to some of my favorite restaurants!</h1>
+
+
+		<ul class="bmenu">
+		<li><a target="_blank" href="http://www.caracasarepabar.com/">Caracas Arepa Bar</a></li>
+		<li><a target="_blank" href="http://www.motorinopizza.com/">Motorino</a></li>
+		<li><a target="_blank" href="http://www.sushiyasaka.com/">Sushi Yasaka</a></li>
+		<li><a target="_blank" href="http://www.ippudony.com/">Ippudo</a></li>
+		<li><a target="_blank" href="http://www.tiffindelivery.us/">Tiffin Wallah</a></li>
+		<li><a target="_blank" href="http://www.joeshanghairestaurants.com/">Joe's Shanghai</a></li>
+		</ul>
+
+	</div>
+	<div class="section4">
+	  <div class="box-container">
+		<div class="box">
+			<h1>Here's a Spotify playlist of some Brazilian and classical music I like</h1>
+			<a target="_blank" href="https://play.spotify.com/user/1222059746/playlist/0UuMkXSkaluErQ8oW7OecI">Click here</a>
+		</div>
+		<div class="box">
+			<h1>Here's a link to my favorite NYC foodie website</h1>
+			<a target="_blank" href="http://ny.eater.com/">Click here</a>
+		</div>
+		<div class="box">
+			<h1>Here's the Star Wars main website.  I'm a huge Star Wars fan!</h1>
+			<a target="_blank" href="http://www.starwars.com/">Click here</a>
+		</div>
+	  </div>
+	</div>
+</div>
+
+
+
+
+<script>
+
+$(document).ready(function(){
+	// animates animate-on-load items
+	var $onloadelems = $('.animate-on-load');
+	$onloadelems.each(function(){
+			$onloadelm = $(this);
+			$onloadelm.addClass('animated');
+		});
+
+	// animates all other (on-scroll) items
+	var $elems = $('.ab-animate-block');
+	var winheight = $(window).height();
+	var fullheight = $(document).height();
+	
+	$(window).scroll(function(){
+		animate_elems();
+	});
+  
+	function animate_elems() {
+		wintop = $(window).scrollTop(); // distance from top of window
+
+		$elems.each(function(){
+			$elm = $(this);
+
+			if($elm.hasClass('animated')) { return true; }
+			
+			topcoords = $elm.offset().top; // element's distance from top of page in pixels
+
+			if(wintop > (topcoords - (winheight*.75))) {
+				// animate when top of the window is 3/4 above the element
+				$elm.addClass('animated');
+			}
+			
+		});
+	}
+});
+</script>
+</body>
+</html>
